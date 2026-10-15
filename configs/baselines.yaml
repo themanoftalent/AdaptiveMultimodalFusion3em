@@ -1,0 +1,26 @@
+project:
+  seed: 42
+
+xgboost:
+  max_depth: 2
+  n_estimators: 100
+  learning_rate: 0.03
+  subsample: 0.8
+  colsample_bytree: 0.8
+  reg_lambda: 2.0
+  reg_alpha: 0.5
+
+logistic_regression:
+  C: 1.0
+  max_iter: 1000
+
+linear_svm:
+  C: 1.0
+
+shallow_mlp:
+  hidden_layer_sizes: [64]
+  max_iter: 500
+
+paths:
+  fusion_config: configs/fusion_gate.yaml
+  output_dir: results/metrics

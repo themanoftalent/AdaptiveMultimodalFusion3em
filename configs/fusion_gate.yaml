@@ -1,0 +1,33 @@
+project:
+  seed: 42
+  device: auto
+
+fusion:
+  fixed_alpha: 0.25
+  alpha_grid_step: 0.05
+  default_alpha_for_ties: 0.25
+
+adaptive_gate:
+  input_dim: 6
+  hidden_dims: [128, 64]
+  output_activation: sigmoid
+  optimizer: adam
+  learning_rate: 0.001
+  batch_size: 128
+  epochs: 20
+  loss: mse
+
+paths:
+  histopathology_probabilities_train: results/probabilities/histopathology_train_p001_p002.csv
+  histopathology_probabilities_p003: results/probabilities/histopathology_p003.csv
+  histopathology_probabilities_p004: results/probabilities/histopathology_p004.csv
+  radiograph_probabilities_train: results/probabilities/radiograph_train_remapped.csv
+  radiograph_probabilities_p003: results/probabilities/radiograph_p003_remapped.csv
+  radiograph_probabilities_p004: results/probabilities/radiograph_p004_remapped.csv
+  labels_train: data/processed/tcia_train_p001_p002.csv
+  labels_p003: data/processed/tcia_p003_validation.csv
+  labels_p004: data/processed/tcia_p004_test.csv
+  gate_checkpoint: checkpoints/adaptive_gate.pt
+  metrics_dir: results/metrics
+  tables_dir: results/tables
+  figures_dir: figures

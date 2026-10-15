@@ -1,0 +1,21 @@
+name: osteo-fusion-repro
+channels:
+  - pytorch
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - numpy
+  - pandas
+  - scikit-learn
+  - scipy
+  - matplotlib
+  - pillow
+  - pyyaml
+  - tqdm
+  - joblib
+  - pip:
+      - torch>=2.2.0
+      - torchvision>=0.17.0
+      - opencv-python>=4.8.0
+      - xgboost>=2.0.0

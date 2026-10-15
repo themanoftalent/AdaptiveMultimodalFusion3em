@@ -1,0 +1,17 @@
+Copyright (c) 2026 Mehmet Akif Çifci and co-authors. All rights reserved.
+
+This repository is provided for peer-review, reproducibility inspection, and academic
+verification of the paper:
+
+    "Adaptive Multimodal Fusion of Histopathology and Radiographs for Osteosarcoma
+    Classification Using EfficientNet and Gated Decision Integration"
+
+No permission is granted to copy, modify, redistribute, sublicense, commercialize, or
+reuse this code in other projects without prior written permission from the copyright
+holders.
+
+Raw image data are not included in this repository. Public datasets must be obtained
+from their original source platforms (The Cancer Imaging Archive and Kaggle).
+Restricted institutional data from Hitit University Faculty of Medicine are not
+redistributed. Users are responsible for complying with the original licenses, access
+terms, ethics approvals, and data-governance requirements of those datasets.

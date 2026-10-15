@@ -1,0 +1,5 @@
+patient_id,split,role
+P001,train,development_training
+P002,train,development_training
+P003,validation,validation_calibration
+P004,test,primary_held_out_test

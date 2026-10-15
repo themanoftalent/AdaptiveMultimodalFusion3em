@@ -1,0 +1,35 @@
+project:
+  seed: 42
+  device: auto
+
+model:
+  architecture: efficientnet_b0
+  pretrained: true
+  num_classes: 2
+  dropout: 0.2
+  unfreeze_last_n_feature_blocks: 2
+
+training:
+  optimizer: adam
+  learning_rate: 0.0001
+  beta1: 0.9
+  beta2: 0.999
+  weight_decay: 0.00001
+  batch_size: 32
+  max_epochs: 50
+  early_stopping_patience: 10
+  scheduler: reduce_lr_on_plateau
+  scheduler_factor: 0.5
+  scheduler_patience: 3
+
+preprocessing:
+  input_size: 224
+  normalization: minmax
+  augmentation_train_only: true
+
+paths:
+  train_csv: myUsername/myDocuments/myLocalDataFolder/Kaggle_Bone_Tumor_Classification/processed/kaggle_train.csv
+  val_csv: myUsername/myDocuments/myLocalDataFolder/Kaggle_Bone_Tumor_Classification/processed/kaggle_validation.csv
+  test_csv: myUsername/myDocuments/myLocalDataFolder/Kaggle_Bone_Tumor_Classification/processed/kaggle_test.csv
+  checkpoint: checkpoints/radiograph_efficientnet_b0.pt
+  probabilities_dir: results/probabilities

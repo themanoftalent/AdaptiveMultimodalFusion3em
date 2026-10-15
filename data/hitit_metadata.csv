@@ -1,0 +1,6 @@
+image_id,binary_label,patient_id,institution
+# This file is a column-header template only.
+# Hitit University Faculty of Medicine data are restricted and not redistributed.
+# Authorized local users: replace this file with their own metadata following the column schema above.
+# binary_label: 0 = Non tumor,
+# Do not commit real patient data to GitHub.

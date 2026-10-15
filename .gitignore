@@ -1,0 +1,60 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Raw image data — must never be committed
+data/raw/
+data/restricted/
+
+# Hitit private data — must never be committed
+*hitit*predictions*
+*hitit*authorized*
+*hitit*private*
+
+# Generated result outputs — populated by running the workflow on real data
+results/metrics/*.json
+results/probabilities/*.csv
+results/tables/*.csv
+
+# Figures generated from results — populated by running scripts/12_generate_figures.py
+figures/Figure_2_*
+figures/Figure_3_*
+figures/Figure_4_*
+figures/Figure_5_*
+
+# Trained model weights — reproduced by running training scripts
+checkpoints/*.pt
+checkpoints/*.pth
+checkpoints/*.bin
+
+# Logs and temp files
+*.log
+*.tmp
+*.bak

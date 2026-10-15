@@ -1,0 +1,16 @@
+project:
+  seed: 42
+  output_dir: results
+
+paths:
+  # Replace these paths with your local dataset locations 
+  tcia_root: /myUsername/myDocuments/myLocalDataFolder/TCIA_Osteosarcoma_Tumor_Assessment
+  kaggle_root: /myUsername/myDocuments/myLocalDataFolder/Kaggle_Bone_Tumor_Classification
+  # Hitit data are restricted so it cannot be uploaded to GitHub
+  hitit_root_authorized_only: /myUsername/myDocuments/myLocalDataFolder/Hitit_data_not_public
+
+metadata:
+  tcia_index_csv: myUsername/myDocuments/myLocalDataFolder/TCIA_Osteosarcoma_Tumor_Assessment/processed/tcia_index.csv
+  kaggle_index_csv: myUsername/myDocuments/myLocalDataFolder/Kaggle_Bone_Tumor_Classification/processed/kaggle_index.csv
+  tcia_patient_splits_csv: myUsername/myDocuments/myLocalDataFolder/TCIA_Osteosarcoma_Tumor_Assessment/splits/tcia_patient_splits.csv
+  kaggle_split_csv: myUsername/myDocuments/myLocalDataFolder/Kaggle_Bone_Tumor_Classification/splits/kaggle_radiograph_split.csv

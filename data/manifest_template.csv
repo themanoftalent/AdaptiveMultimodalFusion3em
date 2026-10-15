@@ -1,0 +1,11 @@
+Path,Description,Required for reproduction,Can be redistributed,How to obtain
+data/raw/tcia_osteosarcoma/,TCIA histopathology tile folder,Yes,No,Download from TCIA original repository
+data/processed/tcia_index.csv,Generated index of TCIA image paths and labels,Yes,Yes,Run scripts/01_prepare_data.py
+data/splits/tcia_patient_splits.csv,Patient-level split definition for P001-P004,Yes,Yes,Included in repository
+data/splits/p003_validation.csv,P003 validation/calibration split (populated by 01_prepare_data.py),Yes,Yes,Run scripts/01_prepare_data.py
+data/splits/p004_test.csv,P004 held-out test split (populated by 01_prepare_data.py),Yes,Yes,Run scripts/01_prepare_data.py
+data/raw/kaggle_bone_tumor/,Kaggle radiograph image folder,Yes,No,Download from Kaggle original dataset page
+data/processed/kaggle_index.csv,Generated index of Kaggle image paths and labels,Yes,Yes,Run scripts/01_prepare_data.py
+results/probabilities/histopathology_p004.csv,Histopathology branch probability outputs on P004,Yes,Yes,Run scripts/04_extract_probabilities.py
+results/probabilities/radiograph_p004_remapped.csv,Remapped radiograph probability prior for P004 fusion,Yes,Yes,Run scripts/05_remap_radiograph_probabilities.py
+data/hitit_metadata_template.csv,Template for restricted external validation metadata,No,No,Not included in repository (restricted)
